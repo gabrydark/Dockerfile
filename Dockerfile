@@ -4,7 +4,7 @@ FROM alpine:latest
 WORKDIR /app
 
 #Install some dependencies 
-RUN apk add --noi-cache curl
+RUN apk add --no-cache curl
 
 #Create a simple script
 RUN echo 'echo "Hello from Docker!"'> run.sh && chmod +x run.sh'
